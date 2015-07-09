@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		33AD47E61ACD78D300164D7A /* Beuatiful images to pdf */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 33AD47E71ACD78D300164D7A /* Build configuration list for PBXAggregateTarget "Beuatiful images to pdf" */;
+			buildPhases = (
+				33AD47EA1ACD78ED00164D7A /* ShellScript */,
+			);
+			dependencies = (
+				33AD47EC1ACD78F100164D7A /* PBXTargetDependency */,
+			);
+			name = "Beuatiful images to pdf";
+			productName = "Beuatiful images to pdf";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		3373E1411ACADBDD005CF1B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373E1401ACADBDD005CF1B5 /* AppDelegate.m */; };
+		3373E1431ACADBDD005CF1B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373E1421ACADBDD005CF1B5 /* main.m */; };
+		3373E1451ACADBDD005CF1B5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3373E1441ACADBDD005CF1B5 /* Images.xcassets */; };
+		3373E1481ACADBDD005CF1B5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3373E1461ACADBDD005CF1B5 /* MainMenu.xib */; };
+		3373E1661ACADC6D005CF1B5 /* LRHMPageItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373E15E1ACADC6D005CF1B5 /* LRHMPageItem.m */; };
+		3373E1671ACADC6D005CF1B5 /* LRHMPagesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373E1601ACADC6D005CF1B5 /* LRHMPagesManager.m */; };
+		3373E1681ACADC6D005CF1B5 /* LRHMPdfBaseInfoCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373E1621ACADC6D005CF1B5 /* LRHMPdfBaseInfoCtrl.m */; };
+		3373E1691ACADC6D005CF1B5 /* LRHMPdfBaseInfoCtrl.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3373E1631ACADC6D005CF1B5 /* LRHMPdfBaseInfoCtrl.xib */; };
+		3373E16A1ACADC6D005CF1B5 /* LRHMTransformManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373E1651ACADC6D005CF1B5 /* LRHMTransformManager.m */; };
+		3373E16C1ACADD26005CF1B5 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373E16B1ACADD26005CF1B5 /* Quartz.framework */; };
+		3373E1751ACAE74C005CF1B5 /* LRHMContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3373E1741ACAE74C005CF1B5 /* LRHMContentView.m */; };
+		3373E17C1ACAE767005CF1B5 /* anticlockwiseRotate90.png in Resources */ = {isa = PBXBuildFile; fileRef = 3373E1771ACAE767005CF1B5 /* anticlockwiseRotate90.png */; };
+		3373E17D1ACAE767005CF1B5 /* clockwiseRotation90.png in Resources */ = {isa = PBXBuildFile; fileRef = 3373E1781ACAE767005CF1B5 /* clockwiseRotation90.png */; };
+		3373E17E1ACAE767005CF1B5 /* exportToPdf.png in Resources */ = {isa = PBXBuildFile; fileRef = 3373E1791ACAE767005CF1B5 /* exportToPdf.png */; };
+		3373E17F1ACAE767005CF1B5 /* horizontalFlip.png in Resources */ = {isa = PBXBuildFile; fileRef = 3373E17A1ACAE767005CF1B5 /* horizontalFlip.png */; };
+		3373E1801ACAE767005CF1B5 /* verticalFlip.png in Resources */ = {isa = PBXBuildFile; fileRef = 3373E17B1ACAE767005CF1B5 /* verticalFlip.png */; };
+		3373E1861ACAECA3005CF1B5 /* centerLayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 3373E1851ACAECA3005CF1B5 /* centerLayer.png */; };
+		337649C91ACD66F80025FAB7 /* centerLayer_tips.png in Resources */ = {isa = PBXBuildFile; fileRef = 337649C81ACD66F80025FAB7 /* centerLayer_tips.png */; };
+		33AD47EE1ACD7AA600164D7A /* Beautiful Images to Pdf.icns in Resources */ = {isa = PBXBuildFile; fileRef = 33AD47ED1ACD7AA600164D7A /* Beautiful Images to Pdf.icns */; };
+		B43C40701ACB91CB00598095 /* LRHMIKImageBrowserView.m in Sources */ = {isa = PBXBuildFile; fileRef = B43C406F1ACB91CB00598095 /* LRHMIKImageBrowserView.m */; };
+		B43C40731ACB91D100598095 /* LRHMTitleBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B43C40721ACB91D100598095 /* LRHMTitleBar.m */; };
+		B4C4D2311ACCEABF008B7A36 /* LRHMExportTipsViewCtrl.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C4D22F1ACCEABF008B7A36 /* LRHMExportTipsViewCtrl.m */; };
+		B4C4D2321ACCEABF008B7A36 /* LRHMExportTipsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4C4D2301ACCEABF008B7A36 /* LRHMExportTipsView.xib */; };
+		B4C4D2351ACD1F50008B7A36 /* LRHMExportTipsView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4C4D2341ACD1F50008B7A36 /* LRHMExportTipsView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33AD47EB1ACD78F100164D7A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3373E1321ACADBDD005CF1B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3373E1391ACADBDD005CF1B5;
+			remoteInfo = ImageToPdf;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3373E13A1ACADBDD005CF1B5 /* Beautiful images to pdf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Beautiful images to pdf.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3373E13E1ACADBDD005CF1B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3373E13F1ACADBDD005CF1B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3373E1401ACADBDD005CF1B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3373E1421ACADBDD005CF1B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3373E1441ACADBDD005CF1B5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3373E1471ACADBDD005CF1B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		3373E1521ACADBDD005CF1B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3373E1531ACADBDD005CF1B5 /* ImageToPdfTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageToPdfTests.m; sourceTree = "<group>"; };
+		3373E15D1ACADC6D005CF1B5 /* LRHMPageItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRHMPageItem.h; sourceTree = "<group>"; };
+		3373E15E1ACADC6D005CF1B5 /* LRHMPageItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRHMPageItem.m; sourceTree = "<group>"; };
+		3373E15F1ACADC6D005CF1B5 /* LRHMPagesManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRHMPagesManager.h; sourceTree = "<group>"; };
+		3373E1601ACADC6D005CF1B5 /* LRHMPagesManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRHMPagesManager.m; sourceTree = "<group>"; };
+		3373E1611ACADC6D005CF1B5 /* LRHMPdfBaseInfoCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRHMPdfBaseInfoCtrl.h; sourceTree = "<group>"; };
+		3373E1621ACADC6D005CF1B5 /* LRHMPdfBaseInfoCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRHMPdfBaseInfoCtrl.m; sourceTree = "<group>"; };
+		3373E1631ACADC6D005CF1B5 /* LRHMPdfBaseInfoCtrl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LRHMPdfBaseInfoCtrl.xib; sourceTree = "<group>"; };
+		3373E1641ACADC6D005CF1B5 /* LRHMTransformManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRHMTransformManager.h; sourceTree = "<group>"; };
+		3373E1651ACADC6D005CF1B5 /* LRHMTransformManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRHMTransformManager.m; sourceTree = "<group>"; };
+		3373E16B1ACADD26005CF1B5 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		3373E1731ACAE74C005CF1B5 /* LRHMContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LRHMContentView.h; path = ImageToPdf/LRHMContentView.h; sourceTree = "<group>"; };
+		3373E1741ACAE74C005CF1B5 /* LRHMContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LRHMContentView.m; path = ImageToPdf/LRHMContentView.m; sourceTree = "<group>"; };
+		3373E1771ACAE767005CF1B5 /* anticlockwiseRotate90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = anticlockwiseRotate90.png; path = ImageToPdf/resource/anticlockwiseRotate90.png; sourceTree = "<group>"; };
+		3373E1781ACAE767005CF1B5 /* clockwiseRotation90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = clockwiseRotation90.png; path = ImageToPdf/resource/clockwiseRotation90.png; sourceTree = "<group>"; };
+		3373E1791ACAE767005CF1B5 /* exportToPdf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = exportToPdf.png; path = ImageToPdf/resource/exportToPdf.png; sourceTree = "<group>"; };
+		3373E17A1ACAE767005CF1B5 /* horizontalFlip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = horizontalFlip.png; path = ImageToPdf/resource/horizontalFlip.png; sourceTree = "<group>"; };
+		3373E17B1ACAE767005CF1B5 /* verticalFlip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = verticalFlip.png; path = ImageToPdf/resource/verticalFlip.png; sourceTree = "<group>"; };
+		3373E1851ACAECA3005CF1B5 /* centerLayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = centerLayer.png; path = ImageToPdf/resource/centerLayer.png; sourceTree = "<group>"; };
+		337649C81ACD66F80025FAB7 /* centerLayer_tips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = centerLayer_tips.png; path = ImageToPdf/resource/centerLayer_tips.png; sourceTree = "<group>"; };
+		33AD47E51ACD78AC00164D7A /* Beautiful images to pdf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Beautiful images to pdf.entitlements"; sourceTree = "<group>"; };
+		33AD47ED1ACD7AA600164D7A /* Beautiful Images to Pdf.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = "Beautiful Images to Pdf.icns"; path = "ImageToPdf/resource/Beautiful Images to Pdf.icns"; sourceTree = "<group>"; };
+		B43C406E1ACB91CB00598095 /* LRHMIKImageBrowserView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LRHMIKImageBrowserView.h; path = ImageToPdf/LRHMIKImageBrowserView.h; sourceTree = "<group>"; };
+		B43C406F1ACB91CB00598095 /* LRHMIKImageBrowserView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LRHMIKImageBrowserView.m; path = ImageToPdf/LRHMIKImageBrowserView.m; sourceTree = "<group>"; };
+		B43C40711ACB91D100598095 /* LRHMTitleBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LRHMTitleBar.h; path = ImageToPdf/LRHMTitleBar.h; sourceTree = "<group>"; };
+		B43C40721ACB91D100598095 /* LRHMTitleBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LRHMTitleBar.m; path = ImageToPdf/LRHMTitleBar.m; sourceTree = "<group>"; };
+		B4C4D22E1ACCEABF008B7A36 /* LRHMExportTipsViewCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LRHMExportTipsViewCtrl.h; path = ImageToPdf/LRHMExportTipsViewCtrl.h; sourceTree = "<group>"; };
+		B4C4D22F1ACCEABF008B7A36 /* LRHMExportTipsViewCtrl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LRHMExportTipsViewCtrl.m; path = ImageToPdf/LRHMExportTipsViewCtrl.m; sourceTree = "<group>"; };
+		B4C4D2301ACCEABF008B7A36 /* LRHMExportTipsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LRHMExportTipsView.xib; path = ImageToPdf/LRHMExportTipsView.xib; sourceTree = "<group>"; };
+		B4C4D2331ACD1F50008B7A36 /* LRHMExportTipsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRHMExportTipsView.h; sourceTree = "<group>"; };
+		B4C4D2341ACD1F50008B7A36 /* LRHMExportTipsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRHMExportTipsView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3373E1371ACADBDD005CF1B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3373E16C1ACADD26005CF1B5 /* Quartz.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3373E1311ACADBDD005CF1B5 = {
+			isa = PBXGroup;
+			children = (
+				B4C4D22D1ACCEA93008B7A36 /* LRHMExportTipsView */,
+				B43C40741ACB91D600598095 /* LRHMTitleBar */,
+				3373E16B1ACADD26005CF1B5 /* Quartz.framework */,
+				3373E1811ACAEADE005CF1B5 /*  LRHMIKImageBrowserView */,
+				3373E1761ACAE755005CF1B5 /* Resource */,
+				3373E16D1ACAE4D5005CF1B5 /* LRHMContentView */,
+				3373E13C1ACADBDD005CF1B5 /* ImageToPdf */,
+				3373E1501ACADBDD005CF1B5 /* ImageToPdfTests */,
+				3373E13B1ACADBDD005CF1B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3373E13B1ACADBDD005CF1B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3373E13A1ACADBDD005CF1B5 /* Beautiful images to pdf.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3373E13C1ACADBDD005CF1B5 /* ImageToPdf */ = {
+			isa = PBXGroup;
+			children = (
+				33AD47E51ACD78AC00164D7A /* Beautiful images to pdf.entitlements */,
+				3373E13F1ACADBDD005CF1B5 /* AppDelegate.h */,
+				3373E1401ACADBDD005CF1B5 /* AppDelegate.m */,
+				3373E15D1ACADC6D005CF1B5 /* LRHMPageItem.h */,
+				3373E15E1ACADC6D005CF1B5 /* LRHMPageItem.m */,
+				3373E15F1ACADC6D005CF1B5 /* LRHMPagesManager.h */,
+				3373E1601ACADC6D005CF1B5 /* LRHMPagesManager.m */,
+				3373E1611ACADC6D005CF1B5 /* LRHMPdfBaseInfoCtrl.h */,
+				3373E1621ACADC6D005CF1B5 /* LRHMPdfBaseInfoCtrl.m */,
+				3373E1631ACADC6D005CF1B5 /* LRHMPdfBaseInfoCtrl.xib */,
+				3373E1641ACADC6D005CF1B5 /* LRHMTransformManager.h */,
+				3373E1651ACADC6D005CF1B5 /* LRHMTransformManager.m */,
+				3373E1441ACADBDD005CF1B5 /* Images.xcassets */,
+				3373E1461ACADBDD005CF1B5 /* MainMenu.xib */,
+				3373E13D1ACADBDD005CF1B5 /* Supporting Files */,
+			);
+			path = ImageToPdf;
+			sourceTree = "<group>";
+		};
+		3373E13D1ACADBDD005CF1B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3373E13E1ACADBDD005CF1B5 /* Info.plist */,
+				3373E1421ACADBDD005CF1B5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3373E1501ACADBDD005CF1B5 /* ImageToPdfTests */ = {
+			isa = PBXGroup;
+			children = (
+				3373E1531ACADBDD005CF1B5 /* ImageToPdfTests.m */,
+				3373E1511ACADBDD005CF1B5 /* Supporting Files */,
+			);
+			path = ImageToPdfTests;
+			sourceTree = "<group>";
+		};
+		3373E1511ACADBDD005CF1B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3373E1521ACADBDD005CF1B5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3373E16D1ACAE4D5005CF1B5 /* LRHMContentView */ = {
+			isa = PBXGroup;
+			children = (
+				3373E1731ACAE74C005CF1B5 /* LRHMContentView.h */,
+				3373E1741ACAE74C005CF1B5 /* LRHMContentView.m */,
+			);
+			name = LRHMContentView;
+			sourceTree = "<group>";
+		};
+		3373E1761ACAE755005CF1B5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				33AD47ED1ACD7AA600164D7A /* Beautiful Images to Pdf.icns */,
+				3373E1771ACAE767005CF1B5 /* anticlockwiseRotate90.png */,
+				337649C81ACD66F80025FAB7 /* centerLayer_tips.png */,
+				3373E1851ACAECA3005CF1B5 /* centerLayer.png */,
+				3373E1781ACAE767005CF1B5 /* clockwiseRotation90.png */,
+				3373E1791ACAE767005CF1B5 /* exportToPdf.png */,
+				3373E17A1ACAE767005CF1B5 /* horizontalFlip.png */,
+				3373E17B1ACAE767005CF1B5 /* verticalFlip.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		3373E1811ACAEADE005CF1B5 /*  LRHMIKImageBrowserView */ = {
+			isa = PBXGroup;
+			children = (
+				B43C406E1ACB91CB00598095 /* LRHMIKImageBrowserView.h */,
+				B43C406F1ACB91CB00598095 /* LRHMIKImageBrowserView.m */,
+			);
+			name = " LRHMIKImageBrowserView";
+			sourceTree = "<group>";
+		};
+		B43C40741ACB91D600598095 /* LRHMTitleBar */ = {
+			isa = PBXGroup;
+			children = (
+				B43C40711ACB91D100598095 /* LRHMTitleBar.h */,
+				B43C40721ACB91D100598095 /* LRHMTitleBar.m */,
+			);
+			name = LRHMTitleBar;
+			sourceTree = "<group>";
+		};
+		B4C4D22D1ACCEA93008B7A36 /* LRHMExportTipsView */ = {
+			isa = PBXGroup;
+			children = (
+				B4C4D22E1ACCEABF008B7A36 /* LRHMExportTipsViewCtrl.h */,
+				B4C4D22F1ACCEABF008B7A36 /* LRHMExportTipsViewCtrl.m */,
+				B4C4D2301ACCEABF008B7A36 /* LRHMExportTipsView.xib */,
+				B4C4D2331ACD1F50008B7A36 /* LRHMExportTipsView.h */,
+				B4C4D2341ACD1F50008B7A36 /* LRHMExportTipsView.m */,
+			);
+			name = LRHMExportTipsView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3373E1391ACADBDD005CF1B5 /* ImageToPdf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3373E1571ACADBDD005CF1B5 /* Build configuration list for PBXNativeTarget "ImageToPdf" */;
+			buildPhases = (
+				3373E1361ACADBDD005CF1B5 /* Sources */,
+				3373E1371ACADBDD005CF1B5 /* Frameworks */,
+				3373E1381ACADBDD005CF1B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageToPdf;
+			productName = ImageToPdf;
+			productReference = 3373E13A1ACADBDD005CF1B5 /* Beautiful images to pdf.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3373E1321ACADBDD005CF1B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = lanruiheimeng;
+				TargetAttributes = {
+					3373E1391ACADBDD005CF1B5 = {
+						CreatedOnToolsVersion = 6.1.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					33AD47E61ACD78D300164D7A = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 3373E1351ACADBDD005CF1B5 /* Build configuration list for PBXProject "ImageToPdf" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3373E1311ACADBDD005CF1B5;
+			productRefGroup = 3373E13B1ACADBDD005CF1B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3373E1391ACADBDD005CF1B5 /* ImageToPdf */,
+				33AD47E61ACD78D300164D7A /* Beuatiful images to pdf */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3373E1381ACADBDD005CF1B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33AD47EE1ACD7AA600164D7A /* Beautiful Images to Pdf.icns in Resources */,
+				3373E1801ACAE767005CF1B5 /* verticalFlip.png in Resources */,
+				3373E17C1ACAE767005CF1B5 /* anticlockwiseRotate90.png in Resources */,
+				B4C4D2321ACCEABF008B7A36 /* LRHMExportTipsView.xib in Resources */,
+				3373E17E1ACAE767005CF1B5 /* exportToPdf.png in Resources */,
+				3373E1451ACADBDD005CF1B5 /* Images.xcassets in Resources */,
+				3373E17F1ACAE767005CF1B5 /* horizontalFlip.png in Resources */,
+				337649C91ACD66F80025FAB7 /* centerLayer_tips.png in Resources */,
+				3373E1481ACADBDD005CF1B5 /* MainMenu.xib in Resources */,
+				3373E1691ACADC6D005CF1B5 /* LRHMPdfBaseInfoCtrl.xib in Resources */,
+				3373E1861ACAECA3005CF1B5 /* centerLayer.png in Resources */,
+				3373E17D1ACAE767005CF1B5 /* clockwiseRotation90.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33AD47EA1ACD78ED00164D7A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "IS_APP_STORE=\"FALSE\"\nfor i in $GCC_PREPROCESSOR_DEFINITIONS ; do\nif [ \"$i\" = \"APP_STORE\" ] ; then\nIS_APP_STORE=\"TRUE\"\nbreak\nfi\ndone\n\nif [ \"$IS_APP_STORE\" = \"TRUE\" ] ; then\nproductbuild --component \"$TARGET_BUILD_DIR/$MY_PRODUCT_NAME.app\" /Applications --sign \"$INSTALL_SIGN_IDENTITY\" \"$HOME/Setup/MacAppStore/$MY_PRODUCT_PKG.pkg\"\nhdiutil create -srcfolder \"$TARGET_BUILD_DIR/$MY_PRODUCT_NAME.app/\" -ov \"$HOME/Setup/MacAppStore/$MY_PRODUCT_DMG\"\nelse\nhdiutil create -srcfolder \"$TARGET_BUILD_DIR/$MY_PRODUCT_NAME.app/\" -ov \"$HOME/Setup/DMGApp/$MY_PRODUCT_DMG\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3373E1361ACADBDD005CF1B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3373E1661ACADC6D005CF1B5 /* LRHMPageItem.m in Sources */,
+				B4C4D2351ACD1F50008B7A36 /* LRHMExportTipsView.m in Sources */,
+				3373E1431ACADBDD005CF1B5 /* main.m in Sources */,
+				3373E1751ACAE74C005CF1B5 /* LRHMContentView.m in Sources */,
+				3373E1411ACADBDD005CF1B5 /* AppDelegate.m in Sources */,
+				B43C40701ACB91CB00598095 /* LRHMIKImageBrowserView.m in Sources */,
+				3373E1681ACADC6D005CF1B5 /* LRHMPdfBaseInfoCtrl.m in Sources */,
+				B43C40731ACB91D100598095 /* LRHMTitleBar.m in Sources */,
+				3373E1671ACADC6D005CF1B5 /* LRHMPagesManager.m in Sources */,
+				3373E16A1ACADC6D005CF1B5 /* LRHMTransformManager.m in Sources */,
+				B4C4D2311ACCEABF008B7A36 /* LRHMExportTipsViewCtrl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33AD47EC1ACD78F100164D7A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3373E1391ACADBDD005CF1B5 /* ImageToPdf */;
+			targetProxy = 33AD47EB1ACD78F100164D7A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3373E1461ACADBDD005CF1B5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3373E1471ACADBDD005CF1B5 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3373E1551ACADBDD005CF1B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3373E1561ACADBDD005CF1B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		3373E1581ACADBDD005CF1B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = "ImageToPdf/Beautiful images to pdf.entitlements";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ImageToPdf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "${my_product}";
+				my_product = "Beautiful images to pdf";
+			};
+			name = Debug;
+		};
+		3373E1591ACADBDD005CF1B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_ENTITLEMENTS = "ImageToPdf/Beautiful images to pdf.entitlements";
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ImageToPdf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "${my_product}";
+				my_product = "Beautiful images to pdf";
+			};
+			name = Release;
+		};
+		33AD47E81ACD78D300164D7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				INSTALL_SIGN_IDENTITY = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MY_PRODUCT_DMG = "Beautiful images to pdf";
+				MY_PRODUCT_NAME = "${MY_PRODUCT_DMG}";
+				MY_PRODUCT_PKG = "${MY_PRODUCT_DMG}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33AD47E91ACD78D300164D7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				GCC_PREPROCESSOR_DEFINITIONS = APP_STORE;
+				INSTALL_SIGN_IDENTITY = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MY_PRODUCT_DMG = "Beautiful images to pdf";
+				MY_PRODUCT_NAME = "${MY_PRODUCT_DMG}";
+				MY_PRODUCT_PKG = "${MY_PRODUCT_DMG}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3373E1351ACADBDD005CF1B5 /* Build configuration list for PBXProject "ImageToPdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3373E1551ACADBDD005CF1B5 /* Debug */,
+				3373E1561ACADBDD005CF1B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3373E1571ACADBDD005CF1B5 /* Build configuration list for PBXNativeTarget "ImageToPdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3373E1581ACADBDD005CF1B5 /* Debug */,
+				3373E1591ACADBDD005CF1B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33AD47E71ACD78D300164D7A /* Build configuration list for PBXAggregateTarget "Beuatiful images to pdf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33AD47E81ACD78D300164D7A /* Debug */,
+				33AD47E91ACD78D300164D7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3373E1321ACADBDD005CF1B5 /* Project object */;
+}

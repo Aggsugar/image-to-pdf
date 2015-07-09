@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6254"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate">
+            <connections>
+                <outlet property="_imageBrowserView" destination="P1g-Me-g4y" id="u7q-HB-Znv"/>
+                <outlet property="_scrollView" destination="nS2-pe-ba3" id="Q2T-aS-uBm"/>
+                <outlet property="window" destination="QvC-M9-y7g" id="gIp-Ho-8D9"/>
+            </connections>
+        </customObject>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+            <items>
+                <menuItem title="ImageToPdf" id="1Xt-HY-uBw">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="ImageToPdf" systemMenu="apple" id="uQy-DD-JDr">
+                        <items>
+                            <menuItem title="About Beautiful images to pdf" id="5kV-Vb-QxS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="orderFrontStandardAboutPanel:" target="-1" id="Exp-CZ-Vem"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                            <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                            <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                            <menuItem title="Services" id="NMo-om-nkz">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                            <menuItem title="Hide Beautiful images to pdf" keyEquivalent="h" id="Olw-nP-bQN">
+                                <connections>
+                                    <action selector="hide:" target="-1" id="PnN-Uc-m68"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                <connections>
+                                    <action selector="hideOtherApplications:" target="-1" id="VT4-aY-XCT"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Show All" id="Kd2-mp-pUS">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <connections>
+                                    <action selector="unhideAllApplications:" target="-1" id="Dhg-Le-xox"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                            <menuItem title="Quit Beautiful images to pdf" keyEquivalent="q" id="4sb-4s-VLi">
+                                <connections>
+                                    <action selector="terminate:" target="-1" id="Te7-pn-YzF"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+                <menuItem title="File" id="dMs-cI-mzQ">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <menu key="submenu" title="File" id="bib-Uj-vzu">
+                        <items>
+                            <menuItem title="Open…" keyEquivalent="o" id="IAo-SY-fd9">
+                                <connections>
+                                    <action selector="loadPageImages:" target="Voe-Tx-rLC" id="Bcm-yX-1mO"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem isSeparatorItem="YES" id="m54-Is-iLE"/>
+                            <menuItem title="Close" keyEquivalent="w" id="DVo-aG-piG">
+                                <connections>
+                                    <action selector="performClose:" target="-1" id="HmO-Ls-i7Q"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </menuItem>
+            </items>
+        </menu>
+        <window title="Beautiful images to pdf" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="QvC-M9-y7g">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="374" y="137" width="700" height="600"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <value key="minSize" type="size" width="500" height="600"/>
+            <view key="contentView" id="EiT-Mj-1SZ" customClass="LRHMContentView">
+                <rect key="frame" x="0.0" y="0.0" width="700" height="600"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <customView id="lyY-63-hyR">
+                        <rect key="frame" x="0.0" y="498" width="700" height="102"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <subviews>
+                            <button identifier="anticlockwiseRotateIdentify" id="gFa-lN-GSQ">
+                                <rect key="frame" x="20" y="12" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="anticlockwiseRotate90" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="nwR-t5-NJy">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="imageAction:" target="Voe-Tx-rLC" id="Gzc-KD-0QW"/>
+                                    <binding destination="Voe-Tx-rLC" name="enabled" keyPath="self.isEnable" id="LtT-0h-cMe"/>
+                                </connections>
+                            </button>
+                            <button identifier="clockwiseRotateIdentify" id="h0e-Kn-fdq">
+                                <rect key="frame" x="111" y="12" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="clockwiseRotation90" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="2Qp-TE-vCi">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="imageAction:" target="Voe-Tx-rLC" id="aDF-2e-sk0"/>
+                                    <binding destination="Voe-Tx-rLC" name="enabled" keyPath="self.isEnable" id="BrK-do-2Wu"/>
+                                </connections>
+                            </button>
+                            <button identifier="horizontalFlipIdentify" id="Ryn-b8-kx5">
+                                <rect key="frame" x="202" y="12" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="horizontalFlip" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="2ca-MS-rg6">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="imageAction:" target="Voe-Tx-rLC" id="Hsk-zM-fTH"/>
+                                    <binding destination="Voe-Tx-rLC" name="enabled" keyPath="self.isEnable" id="tdj-Ii-UQL"/>
+                                </connections>
+                            </button>
+                            <button identifier="verticalFlipIdentify" id="yvb-R4-laf">
+                                <rect key="frame" x="293" y="12" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="verticalFlip" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="np0-YR-xc7">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="imageAction:" target="Voe-Tx-rLC" id="IzA-Cg-4dh"/>
+                                    <binding destination="Voe-Tx-rLC" name="enabled" keyPath="self.isEnable" id="NEt-fU-Lic"/>
+                                </connections>
+                            </button>
+                            <button identifier="exportBtnIdentify" id="Ygu-N7-ztT">
+                                <rect key="frame" x="599" y="12" width="81" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="exportToPdf" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="2gX-zt-h9f">
+                                    <behavior key="behavior" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="exportPdf:" target="Voe-Tx-rLC" id="Iu1-au-TB6"/>
+                                    <binding destination="Voe-Tx-rLC" name="enabled" keyPath="self.isCanExport" id="IER-VT-jFE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </customView>
+                    <scrollView autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="nS2-pe-ba3">
+                        <rect key="frame" x="20" y="20" width="660" height="479"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <clipView key="contentView" id="NzL-JW-sQs">
+                            <rect key="frame" x="1" y="1" width="166" height="79"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <view id="P1g-Me-g4y" customClass="LRHMIKImageBrowserView">
+                                    <rect key="frame" x="0.0" y="398" width="658" height="477"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <connections>
+                                        <outlet property="_dataSource" destination="Voe-Tx-rLC" id="cUS-tQ-B0n"/>
+                                        <outlet property="_delegate" destination="Voe-Tx-rLC" id="C4g-5F-tpq"/>
+                                        <outlet property="_dragDestinationDelegate" destination="Voe-Tx-rLC" id="bhq-SK-DFI"/>
+                                        <outlet property="dataSource" destination="Voe-Tx-rLC" id="1KA-J1-peH"/>
+                                        <outlet property="delegate" destination="Voe-Tx-rLC" id="nbY-fS-6nG"/>
+                                        <outlet property="dragDestinationDelegate" destination="Voe-Tx-rLC" id="3kX-bK-IUm"/>
+                                    </connections>
+                                </view>
+                            </subviews>
+                        </clipView>
+                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="n0j-Pf-dY7">
+                            <rect key="frame" x="1" y="80" width="166" height="15"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="rJs-Fr-kFw">
+                            <rect key="frame" x="167" y="1" width="15" height="79"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </scroller>
+                    </scrollView>
+                </subviews>
+            </view>
+            <point key="canvasLocation" x="88" y="432"/>
+        </window>
+        <userDefaultsController representsSharedInstance="YES" id="Arh-4B-EMO"/>
+    </objects>
+    <resources>
+        <image name="anticlockwiseRotate90" width="81" height="81"/>
+        <image name="clockwiseRotation90" width="81" height="81"/>
+        <image name="exportToPdf" width="81" height="81"/>
+        <image name="horizontalFlip" width="81" height="81"/>
+        <image name="verticalFlip" width="81" height="81"/>
+    </resources>
+</document>
